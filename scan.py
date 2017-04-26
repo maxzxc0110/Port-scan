@@ -2,6 +2,7 @@
 #!/usr/bin/python
 import socket, time,threading
 
+#扫描函数
 def scan(ip,port):
     try:
         s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -26,13 +27,12 @@ def main(ip):
                 t.start()
         except:
             print 'can\'t start new thread'
-            
-        
+
         try:
             for t in threads:
                 t.join()
         except:
-            print 'opss~'
+            print 'oops~'
 
 #获取端口数组        
 def getList():
