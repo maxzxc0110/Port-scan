@@ -2,7 +2,6 @@
 #!/usr/bin/python
 import socket, time
 
-
 def scan(ip,port):
     try:
         s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -11,8 +10,7 @@ def scan(ip,port):
             print ip+":"+str(port)+" 端口开放"
     except:
         print '端口扫描异常'
-        
-    
+
 def run(ip):
     try:
         print "扫描开始:%s"%ip
