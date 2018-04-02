@@ -40,8 +40,6 @@ def main(ip,flag='1'):
     flag = str(flag);
     #扫描指定端口频段
     if '-' in flag:  
-        # print flag
-        # exit(0)
         l =  re.findall(r"\d+\.?\d*",flag)
         start = l[0]
         end = l[1]
@@ -49,8 +47,6 @@ def main(ip,flag='1'):
     #扫描指定端口           
     elif ',' in flag:  
         portList =  re.findall(r"\d+\.?\d*",flag)
-        # print portList
-        # exit(0)
         doActionA(portList)
     #扫描默认端口列表
     elif flag == '1':  
