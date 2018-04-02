@@ -119,8 +119,8 @@ def getAllPortList():
 
 
 if __name__=='__main__':
-    #ip = raw_input("请输入要扫描的ip:\n")
-    ip = '101.200.139.133'
+    ip = raw_input("请输入要扫描的ip:\n")
+#     ip = '101.200.139.133' //test data
     print "扫描开始:%s"%ip
     start_time=time.time()
     main(ip,'0')
