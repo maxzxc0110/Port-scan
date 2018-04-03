@@ -61,7 +61,6 @@ def main(ip,flag='1'):
             doActionB(start,end)
 
 
-
 def doActionA(portList):
         threads = []
         for x in portList:
@@ -93,7 +92,6 @@ def doActionB(start,end):
                     t.join()
     except:
         print 'oops~'
-
 
 
 #获取全端口数组        
